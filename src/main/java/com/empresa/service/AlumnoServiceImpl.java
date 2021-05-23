@@ -48,8 +48,6 @@ public class AlumnoServiceImpl implements AlumnoService {
 	@Override
 	public List<Alumno> listaPorDni(String dni, int idAlumno) {
 		return repository.findByDniAndIdAlumnoNot(dni, idAlumno);
-	}
-
-	
+	}	
 
 }
